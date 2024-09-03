@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Learning Hub Platform</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Community Learning Hub</a>
+            <ul class="nav-menu">
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#tutoring">Tutoring</a></li>
+                <li><a href="#mentoring">Mentoring</a></li>
+                <li><a href="#forum">Community Forum</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to the Community Learning Hub</h1>
+            <p>Providing educational support to rural and underserved areas.</p>
+            <a href="#resources" class="btn">Explore Resources</a>
+        </div>
+    </header>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section">
+        <div class="container">
+            <h2>Resource Library</h2>
+            <p>Access a variety of educational materials to enhance your learning experience.</p>
+            <div class="resource-grid">
+                <div class="resource-item">
+                    <h3>Mathematics</h3>
+                    <p>Explore our collection of math videos and practice problems.</p>
+                    <button class="btn">View Resources</button>
+                </div>
+                <div class="resource-item">
+                    <h3>Science</h3>
+                    <p>Find engaging science experiments and explanatory videos.</p>
+                    <button class="btn">View Resources</button>
+                </div>
+                <div class="resource-item">
+                    <h3>Literature</h3>
+                    <p>Access a range of articles and books to improve literacy skills.</p>
+                    <button class="btn">View Resources</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutoring Section -->
+    <section id="tutoring" class="section">
+        <div class="container">
+            <h2>Tutoring Sessions</h2>
+            <p>Join our virtual tutoring sessions to get personalized help in various subjects.</p>
+            <button onclick="openModal('tutoringModal')" class="btn">Schedule a Session</button>
+        </div>
+    </section>
+
+    <!-- Mentoring Section -->
+    <section id="mentoring" class="section">
+        <div class="container">
+            <h2>Mentoring Program</h2>
+            <p>Sign up for our mentoring program to receive guidance from experienced mentors.</p>
+            <button onclick="openModal('mentoringModal')" class="btn">Sign Up for Mentoring</button>
+        </div>
+    </section>
+
+    <!-- Community Forum Section -->
+    <section id="forum" class="section">
+        <div class="container">
+            <h2>Community Forum</h2>
+            <p>Join the community forum to engage in discussions and seek support from peers and educators.</p>
+            <button class="btn">Visit Forum</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Community Learning Hub Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals for Tutoring and Mentoring -->
+    <div id="tutoringModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('tutoringModal')">&times;</span>
+            <h2>Schedule a Tutoring Session</h2>
+            <p>Select a subject and preferred time for your tutoring session.</p>
+            <!-- Form to schedule tutoring -->
+            <form>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="literature">Literature</option>
+                </select>
+                <label for="time">Preferred Time:</label>
+                <input type="datetime-local" id="time" name="time">
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="mentoringModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('mentoringModal')">&times;</span>
+            <h2>Mentoring Program Sign-Up</h2>
+            <p>Fill out the form to join our mentoring program and be paired with a mentor.</p>
+            <!-- Form to sign up for mentoring -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

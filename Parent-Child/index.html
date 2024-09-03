@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parental Engagement Portal</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Parental Engagement Portal</a>
+            <ul class="nav-menu">
+                <li><a href="#communication">Communication</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#progress-reports">Progress Reports</a></li>
+                <li><a href="#events">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to the Parental Engagement Portal</h1>
+            <p>Stay connected with your child's education journey.</p>
+            <a href="#communication" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Communication Section -->
+    <section id="communication" class="section">
+        <div class="container">
+            <h2>Parent-Teacher Communication</h2>
+            <p>Engage directly with teachers to discuss your child's progress and achievements.</p>
+            <button onclick="openModal('chatModal')" class="btn">Start Chat</button>
+        </div>
+    </section>
+
+    <!-- Educational Resources Section -->
+    <section id="resources" class="section">
+        <div class="container">
+            <h2>Educational Resources</h2>
+            <p>Access a variety of resources to support your child's learning at home.</p>
+            <!-- Add resources here -->
+        </div>
+    </section>
+
+    <!-- Progress Reports Section -->
+    <section id="progress-reports" class="section">
+        <div class="container">
+            <h2>Progress Reports</h2>
+            <p>Check your child's grades, attendance, and other academic metrics.</p>
+            <div class="report-card">
+                <h3>John Doe's Progress Report</h3>
+                <ul>
+                    <li>Math: A</li>
+                    <li>Science: B+</li>
+                    <li>English: A-</li>
+                    <li>History: B</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul class="event-list">
+                <li>Parent-Teacher Conference: Sept 15th</li>
+                <li>Science Fair: Oct 1st</li>
+                <li>Winter Break: Dec 20th - Jan 2nd</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Parental Engagement Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Chat -->
+    <div id="chatModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('chatModal')">&times;</span>
+            <h2>Start a Chat with Your Child's Teacher</h2>
+            <textarea placeholder="Type your message here..."></textarea>
+            <button class="btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
